@@ -16,7 +16,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="" title=""><i class="uk-icon-book"></i> 官方手册</a></li>
+                        <li><a href="/freenas/freenas.html" title="FreeNAS-9.3 用户手册" target="_blank"><i class="uk-icon-book"></i> 官方手册</a></li>
                         <li class="uk-parent" data-uk-dropdown>
                             <a href="" title=""><i class="uk-icon-life-bouy"></i> 技术交流</a>
                             <div class="uk-dropdown uk-dropdown-navbar">
