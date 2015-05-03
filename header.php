@@ -54,6 +54,7 @@
         $(document).ready(function(){
             // tooltips
             $("div#mainText span").attr("data-uk-tooltip","");
+            $("table").addClass('uk-table uk-table-striped uk-table-condensed');
         });
     </script>
     <script>
