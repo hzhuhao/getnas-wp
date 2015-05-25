@@ -300,7 +300,7 @@
                 <h3>最新教程</h3>
                 <div class="uk-panel uk-panel-box" id="latestList">
                     <ol>
-                        <?php query_posts( array('showposts' => '10','category__not_in' => array('2','8','49','51')) ); // 调用除下载外全部分类文章?>
+                        <?php query_posts( array('showposts' => '10','category__not_in' => array('2','8','49','51','52','53','54','55','56','57','58','59')) ); // 调用除下载外全部分类文章?>
                         <?php while ( have_posts() ) : the_post(); ?>
                         <li><a href="<?php the_permalink();?>" target="_blank"><?php the_title();?></a></li>
                         <?php endwhile; wp_reset_query();// end of the loop. ?>
