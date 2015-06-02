@@ -4,7 +4,7 @@
             <div class="uk-grid">
                 <div class="uk-width-1-1" id="subNav">
                     <span>当前位置：</span>
-                    <a href="">首页</a>
+                    <a href="/">首页</a>
                     <span class="sep">></span>
                     <a href="/hardware">硬件指南</a>
                     <span class="sep">></span>
@@ -34,15 +34,7 @@
                         <?php the_content(); // 显示正文 ?>
                         <?php endwhile; // end of the loop. ?>
 
-                        <h3>你可能还喜欢：</h3>
-                        <ul>
-                            <li><a href="">此前已经向大家介绍了FreeNAS</a></li>
-                            <li><a href="">通过Rsync进行文件同步</a></li>
-                            <li><a href="">更重要的是希望通过操作演示让大家对Rsync这款工具</a></li>
-                            <li><a href="">多台FreeNAS数据冗余：配置Rsync同步</a></li>
-                            <li><a href="">多台FreeNAS数据冗余：配置Rsync同步</a></li>
-                            <li><a href="">多台FreeNAS数据冗余：配置Rsync同步</a></li>
-                        </ul>
+                        <?php related_posts(); // 相关内容推荐?>
                         
                         <div id="comment" class="uk-margin-top">
                             <!-- 多说评论框 start -->
@@ -68,21 +60,8 @@
                 <div class="uk-width-1-4" id="right">
                     <div class="uk-grid">
                         <?php get_template_part('hardwareNav'); ?>
-                        <div class="uk-width-1-1 uk-margin-top">
-                            <div class="uk-panel uk-panel-header hotList">
-                                <h3 class="uk-panel-title">热门硬件</h3>
-                                <ol>
-                                    <li><a href="">FreeNAS 系统安装图文教程</a></li>
-                                    <li><a href="">常用共享介绍：CIFS、AFP、NFS、WebDAV</a></li>
-                                    <li><a href="">DIY NAS 如何选择机箱？</a></li>
-                                    <li><a href="">为 FreeNAS ZFS RAIDZ 增加扩展容量</a></li>
-                                    <li><a href="">如何为 FreeNAS 9.2.x 制作U盘镜像？</a></li>
-                                    <li><a href="">在 VirtualBox 中安装 FreeNAS 9.3</a></li>
-                                    <li><a href="">组装 FreeNAS 系统应该如何选择搭配内存？</a></li>
-                                    <li><a href="">FreeNAS插件打造ownCloud私有云网盘</a></li>
-                                </ol>
-                            </div>
-                        </div>
+                        <!-- 热门教程 -->
+                        <?php get_template_part('hotTopic'); ?>
                     </div>
                 </div>
             </div>
